@@ -1,0 +1,17 @@
+{
+    "name": "leantime/itk",
+    "description": "ITK plugin",
+    "version": "0.0.0",
+    "authors": [
+        {
+            "name": "Mikkel Ricky",
+            "email": "rimi@aarhus.dk"
+        }
+    ],
+    "type": "leantime-plugin",
+    "license": "MIT",
+    "homepage": "https://github.com/itk-leantime/leantime-plugin-itk",
+    "require": {
+        "leantime/leantime": "^3.0"
+    }
+}
