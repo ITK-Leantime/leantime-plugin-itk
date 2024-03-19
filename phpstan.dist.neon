@@ -1,0 +1,16 @@
+parameters:
+    level: 6
+    paths:
+        - .
+
+    excludePaths:
+        - vendor
+        - vendor-plugin
+        - node_modules
+
+    checkGenericClassInNonGenericObjectType: false
+
+
+# Local Variables:
+# mode: yaml
+# End:
