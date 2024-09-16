@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -o errexit -o errtrace -o noclobber -o nounset -o pipefail
+
+export plugin_name="Hello, World"
+
+
+buildRelease() {
+    echo "Hello, this is myFunction!"
+    exit
+}
+
+export -f buildRelease
