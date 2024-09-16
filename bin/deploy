@@ -5,7 +5,7 @@ set -o errexit -o errtrace -o noclobber -o nounset -o pipefail
 local_create_release="./local.create-release"
 
 if [[ ! -f "$local_create_release" ]]; then
-    (>&2 echo "Error: $local_create_release does not exist. See readme.")
+    (>&2 echo "Error: $local_create_release does not exist. See README.")
     exit
 fi
 

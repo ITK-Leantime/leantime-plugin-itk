@@ -6,18 +6,18 @@ IFS=$'\n\t'
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 project_dir=$(cd "$(dirname "$script_dir")" && pwd)
 # shellcheck source=local.create-release
-local_create_release="./local.create-release"
-release_exclude_file="./release-exclude.txt"
+local_create_release="bin/local.create-release"
+release_exclude_file="bin/release-exclude.txt"
 
 if [[ ! -f "$local_create_release" ]]; then
-    (>&2 echo "Error: $local_create_release does not exist. See readme.")
+    (>&2 echo "Error: $local_create_release does not exist. See README.")
     exit
 fi
 # shellcheck source=local.create-release
 source $local_create_release
 
 if [[ ! -f "$release_exclude_file" ]]; then
-    (>&2 echo "Error: $release_exclude_file does not exist. See readme.")
+    (>&2 echo "Error: $release_exclude_file does not exist. See README.")
     exit
 fi
 
