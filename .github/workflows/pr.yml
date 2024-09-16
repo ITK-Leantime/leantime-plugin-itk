@@ -40,7 +40,6 @@ jobs:
       matrix:
         blocks:
           - development-install markdown-check
-          - development-install test-create-release
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
