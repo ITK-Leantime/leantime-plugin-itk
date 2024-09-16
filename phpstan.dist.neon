@@ -5,7 +5,6 @@ parameters:
 
     excludePaths:
         - vendor
-        - vendor-plugin
         - node_modules
 
     checkGenericClassInNonGenericObjectType: false
