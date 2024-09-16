@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 set -o errexit -o errtrace -o noclobber -o nounset -o pipefail
 
-export plugin_name="Hello, World"
+export plugin_name=leantime_plugin_template
 
 
 buildRelease() {
-    echo "Hello, this is myFunction!"
-    exit
+  return
 }
 
 export -f buildRelease
