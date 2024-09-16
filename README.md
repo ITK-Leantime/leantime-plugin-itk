@@ -1,6 +1,6 @@
 # ITK plugin
 
-## Initial setup
+## Initial development setup
 
 In the `bin`folder, create release-exclude.txt with the folders/files excluded from future releases.
 
@@ -9,6 +9,12 @@ echo "" > release-exclude.txt
 ```
 
 Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.
+
+Run composer install
+
+```shell name=development-install
+docker run --interactive --rm --volume ${PWD}:/app itkdev/php8.3-fpm:latest composer install
+```
 
 ## Installation
 
@@ -22,8 +28,6 @@ Install and enable the plugin:
 bin/leantime plugin:install leantime/itk --no-interaction
 bin/leantime plugin:enable leantime/itk --no-interaction
 ```
-
-### Install _before_ running coding standards
 
 ### Composer normalize
 
