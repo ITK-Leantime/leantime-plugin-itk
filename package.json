@@ -1,0 +1,16 @@
+{
+  "name": "leantime-plugin-itk",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/itk-dev/leantime-itk",
+  "license": "MIT",
+  "devDependencies": {
+    "markdownlint-cli": "^0.39.0"
+  },
+  "scripts": {
+    "coding-standards-check/markdownlint": "markdownlint --ignore LICENSE.md '*.md' docs/",
+    "coding-standards-check": "yarn coding-standards-check/markdownlint",
+    "coding-standards-apply/markdownlint": "markdownlint --ignore LICENSE.md '*.md' docs/ --fix",
+    "coding-standards-apply": "yarn coding-standards-apply/markdownlint"
+  }
+}
