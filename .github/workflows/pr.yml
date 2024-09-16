@@ -27,7 +27,6 @@ jobs:
         run: |
           docker run --rm --volume $PWD:/md peterdavehello/markdownlint markdownlint --ignore vendor --ignore LICENSE.md '**/*.md'
 
-
   documentation:
     runs-on: ubuntu-latest
     name: Documentation should be updated
@@ -51,7 +50,7 @@ jobs:
     strategy:
       matrix:
         blocks:
-          - development-install test-create-release
+          - development-install markdown-check
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
