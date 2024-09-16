@@ -80,7 +80,7 @@ docker run --interactive --rm --volume ${PWD}:/app itkdev/php8.3-fpm:latest comp
 ## Test release build
 
 ```shell name=test-create-release
-docker compose build && docker compose run --rm php bin/create-release dev-test
+docker compose build && docker run --rm php bin/create-release dev-test
 ```
 
 The create-release script replaces `@@VERSION@@` in that will be placed in `register.php` and when importing assets in a
