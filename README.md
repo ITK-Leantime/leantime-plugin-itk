@@ -88,11 +88,7 @@ docker run --interactive --rm --volume ${PWD}:/app itkdev/php8.3-fpm:latest comp
 docker compose build && docker compose run --rm php bin/create-release dev-test
 ```
 
-The create-release script replaces `@@VERSION@@` in
-[register.php](https://github.com/ITK-Leantime/leantime-dataexport/blob/f7c3992f78270c03b6fc84dbc9b1bbd6e48e53d6/register.php#L9)
-and
-[Services/DataExport.php](https://github.com/ITK-Leantime/leantime-dataexport/blob/f7c3992f78270c03b6fc84dbc9b1bbd6e48e53d6/Services/DataExport.php#L15)
-with the tag provided (in the above it is `dev-test`).
+The create-release script replaces `@@VERSION@@` in that will be placed in `register.php` and when importing assets in a services file. 
 
 ## Deploy
 
