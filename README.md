@@ -14,9 +14,8 @@ docker run --interactive --rm --volume ${PWD}:/app itkdev/php8.3-fpm:latest comp
 
 ## Installation
 
-Download a release from
-<https://github.com/ITK-Leantime/leantime-plugin-itk/releases> and extract into
-your Leantime plugins folder.
+Download a release from <https://github.com/ITK-Leantime/leantime-plugin-itk/releases> and extract into your Leantime
+plugins folder.
 
 Install and enable the plugin:
 
@@ -84,7 +83,8 @@ docker run --interactive --rm --volume ${PWD}:/app itkdev/php8.3-fpm:latest comp
 docker compose build && docker compose run --rm php bin/create-release dev-test
 ```
 
-The create-release script replaces `@@VERSION@@` in that will be placed in `register.php` and when importing assets in a services file.
+The create-release script replaces `@@VERSION@@` in that will be placed in `register.php` and when importing assets in a
+services file.
 
 ## Deploy
 
