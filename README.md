@@ -2,11 +2,7 @@
 
 ## Initial development setup
 
-In the `bin`folder, create release-exclude.txt with the folders/files excluded from future releases.
-
-```shell
-echo "" > release-exclude.txt
-```
+In the `bin`folder, fill out release-exclude.txt with the folders/files excluded from future releases.
 
 Implement the build function and fill out the varibles (`plugin_name`,`plugin_repo_url`) in bin/local.create-release.
 
@@ -73,12 +69,12 @@ docker run --rm --volume $PWD:/md peterdavehello/markdownlint markdownlint --ign
 ```shell name=shell-check
 docker run --rm --volume "$PWD:/app" --workdir /app peterdavehello/shellcheck shellcheck bin/create-release
 docker run --rm --volume "$PWD:/app" --workdir /app peterdavehello/shellcheck shellcheck bin/deploy
+docker run --rm --volume "$PWD:/app" --workdir /app peterdavehello/shellcheck shellcheck bin/local.create-release
 ```
 
 ### Code analysis
 
 ```shell name=code-analysis
-docker run --interactive --rm --volume ${PWD}:/app itkdev/php8.3-fpm:latest composer install
 docker run --interactive --rm --volume ${PWD}:/app itkdev/php8.3-fpm:latest composer code-analysis
 ```
 
