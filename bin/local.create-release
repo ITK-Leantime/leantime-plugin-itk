@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -o errexit -o errtrace -o noclobber -o nounset -o pipefail
+
+export plugin_name=LeantimePluginTemplate
+export plugin_repo_url=SomeUrl
+
+buildRelease() {
+  return
+}
+
+export -f buildRelease
